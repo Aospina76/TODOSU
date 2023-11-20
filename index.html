@@ -1,3 +1,17 @@
+<!-- Entregable curso FULLSTACK INTERMEDIO ATENEA (Universidad Distrital).
+
+    Primera Desarrollo web para la gestión de contratos, grosso modo la aplicación gestiona seguimiento a obligaciones 
+    contractuales, no se detalla la arquitectura de la aplicación y el dimensionamiento en su totalidad.
+
+    Se entrega una aplicación básica que permite llevar el seguimiento de una manera general en un campo LONGTEX, con el 
+    propósito de iniciar un desarrollo robusto de una plataforma de gestión y seguimiento contractual como idea de negocio
+    y emprendimiento.
+
+    Algunos fragmentos de código se comentan, con el fin de tener una referencia, consideraciones y mejoras producto de
+    recomendaciones del Profesor Andrés que me han permitido investigar en temas diversos como seguridad, arquitectura, 
+    estructura de datos, diseño Web, entre otros. Esto comentarios tienen el fin de servir como base para continuar el
+    desarrollo de las siguientes versiones. -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,9 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="styles/stylespage.css" rel="stylesheet" type="text/css" />
-    <script src="/scripts/scrips.js"></script>
 </head>
-<!-- comentario-->
 <body>
     <header>
         <div id="Barra_menu">
@@ -23,7 +35,7 @@
                     <a class="Elemento_menu" href="#Nosotros">SOBRE NOSOTROS</a>
                     <a class="Elemento_menu" href="#Nuestros_clientes">NUESTROS CLIENTES</a>
                     <a class="Elemento_menu" href="#Contacto">CONTACTENOS</a>
-                    <a class="Elemento_menu" href="Login.php" target="_blank">LOGIN</a>
+                    <a class="Elemento_menu" href="Login.php">LOGIN</a>
                 </div> 
                 <i id="menu_icon" class="ri-menu-fill"></i>                  
             </nav>
@@ -31,15 +43,13 @@
     </header>
     <section id="Inicio" class="Seccion">
         <div id="Overlay"></div>
-        <video class="Fondo" src="/videos/AdobeStock_464871453.mov" loop autoplay preload muted></video>
-
         <div>
             <div id="Titulo">
                 <h1 class="Blushadow">CONSULTORA EN TECNOLOGIA Y COMUNICACIONES</h1>
                 <h2>El respaldo para el éxito de sus proyectos</h2>
             </div>
         </div>
-        
+        <video class="Fondo" src="videos/AdobeStock_464871453.mov" loop autoplay preload muted></video>
     </section>
     <section id="Nosotros" class="Seccion">
         <h2>SOBRE NOSOTROS</h2>
@@ -70,12 +80,12 @@
         <h2>NUESTROS CLIENTES</h2>
         <div class="Contenido">
             <div class="Clientes">
-                <img class="Cliente_logo"  src="/images/logo_mintic.png" alt="MinTIC">
-                <img class="Cliente_logo"  src="/images/logo_men.png" alt="MEN">
-                <img class="Cliente_logo" src="/images/logo_cartago.png" alt="Cartago">
-                <img class="Cliente_logo"  src="/images/logo_sdscj.png" alt="SDSCJ">            
-                <img class="Cliente_logo"  src="/images/logo_sabaneta.jpeg" alt="Sabaneta">
-                <img class="Cliente_logo"  src="/images/logo_itagui.jpg" alt="SDSCJ">
+                <img class="Cliente_logo"  src="images/logo_mintic.png" alt="MinTIC">
+                <img class="Cliente_logo"  src="images/logo_men.png" alt="MEN">
+                <img class="Cliente_logo" src="images/logo_cartago.png" alt="Cartago">
+                <img class="Cliente_logo"  src="images/logo_sdscj.png" alt="SDSCJ">            
+                <img class="Cliente_logo"  src="images/logo_sabaneta.jpeg" alt="Sabaneta">
+                <img class="Cliente_logo"  src="images/logo_itagui.jpg" alt="SDSCJ">
             </div>
         </div>
     </section>
@@ -99,7 +109,7 @@
         </div>
         <div id="Block2" class="LinksFooter">
             <a href="#Contacto">CONTACTENOS</a>
-            <a class="Elemento_menu" href="Login.php">LOGIN</a>
+            <a class="Elemento_menu" href="back/Login.php">LOGIN</a>
         </div> 
         <div id="Block3" class="Redes">
             <i class="ri-linkedin-fill"></i>
@@ -115,6 +125,6 @@
             <a>BOGOTÁ D.C.</a>
         </div> 
     </footer>
-
+    <script src="scripts/scrips.js"></script>
 </body>
 </html>

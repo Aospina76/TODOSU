@@ -16,7 +16,6 @@ font-family: 'Inter', sans-serif;
 }
 
 body {
-  display: contents;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
@@ -27,7 +26,7 @@ a * {
 }
 
 /* CONTIENE LOS ESTILOS PARA EL ENVCABEZADO QUE FLOTA POR TODA LA PAGINA
-   EN ESTE ENCABEZADO SOLO SE ENCUANTRA EL LOGO Y EL MENU
+   EN ESTE ENCABEZADO SOLO SE ENCUeNTRA EL LOGO Y EL MENU
 */
 
 header {
@@ -124,9 +123,10 @@ nav:hover #Menu{
 
 /* ESTILOS PARA LA SECCION DE INICIO */
 .Seccion {
-    display: block;
+    display: flex;
     width: 100%;
     height: 720px;
+    overflow-x: hidden;
 }
 
 .Fondo {

@@ -1,13 +1,7 @@
 <?php
 if (isset($_GET['status'])) {
-    if ($_GET['status'] == 1) {
-        echo '<script>alert("registro éxitoso");</script>';
-    }
-    if ($_GET['status'] == 2) {
-        echo '<script>alert("El usuario ya existe");</script>';
-    }
     if ($_GET['status'] == 3) {
-        echo '<script>alert("Acceso denegado");</script>';
+        echo '<script>alert("Credenciales incorrectas");</script>';
     }
 }
 ?>
@@ -18,24 +12,24 @@ if (isset($_GET['status'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONSULTIC</title>
     <link rel="shortcut icon" type=image/x-icon href="images/icons8-terraformar-48.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="styles/stylespageaplicacion.css" rel="stylesheet" type="text/css" />
+    <link href="styles/stylesLogin.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <video class="Fondo" src="/videos/AdobeStock_450717838.mov" loop autoplay preload muted></video>
-    <section id="Inicio" class="Seccion">
-    <video class="Fondo" src="/videos/AdobeStock_450717838.mov" loop autoplay preload muted></video>
-        <div class="Loging">
+    <section id="Contenedor" class="Seccion">    
+        <video class="Fondo" src="videos/AdobeStock_450717838.mov" loop autoplay preload muted></video>
+        <div class="Login">
             <div class="Texto">
                 <h2>INGRESO A GESTOR CONSULTIC</h2>
                 <p>Sistema de gestión y seguimientos de contratos</p>
             </div>
-            <form method="post" action="/scripts/login.php">
-                <input type="text" id="username" placeholder="correo" name="username"><br>
-                <input type="password" id="password" placeholder="Contraseña" name="password">
+            <form method="POST" action="../db/ingreso.php">
+                <input type="email" id="correo" placeholder="Correo" name="correo" required>
+                <input type="password" id="password" placeholder="Contraseña" name="password" required>
                 <div>
-                    <button type="submit">Entrar</button>
-                    <a href="index.html">Cancelar</a>
+                    <button name="login_btn" type="submit" class="btn btn-default btn3d">Entrar</button>
+                    <a class="btn btn-default btn3d" href="index.html">Cancelar</a>
                 </div>
             </form> 
         </div>     

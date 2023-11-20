@@ -1,4 +1,4 @@
-/* ESTILOS PARA TODA LA PAGINA */
+/* ESTILOS PARA Login.php*/
 
 /* importa fuentes */
 
@@ -21,7 +21,7 @@ html::-webkit-scrollbar {  /* Para Edge*/
   width: 0px;
   height: 0px;
 }
-
+ 
 * {
   padding: 0px;
   margin: 0px;
@@ -32,59 +32,61 @@ html::-webkit-scrollbar {  /* Para Edge*/
 }
 
 body {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
   overflow-x: hidden;
 }
 
-.Fondo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;    
-}
-
-.Seccion {
-    position: relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 720px;
-    z-index: 2;
-}
-
-.Loging {
-  position: absolute;
-  background-color: rgba(231, 232, 239, 0.564);
-  position: relative;
+#Contenedor {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 720px;
+}
+
+.Fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;  
+  z-index: 1;
+}
+
+.Login {
+  position: absolute;
+  display:flex;
   width: 50%;
   height: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 232, 239, 0.564);
   box-shadow: 5px 5px 5px rgba(1, 15, 204, 0.426);
   border-radius: 20px;
+  z-index: 4;
 }
+
 form {
+  position: relative;
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 form * {
   margin-top: 20px;
-  margin-left: 10px;
+
 }
 
 input {
+  width: 90%;
   padding: 5px;
 }
 
 .Texto {
+  position: relative;
   width: 50%;
   height: 100%;
   display: flex;
@@ -101,3 +103,4 @@ input {
 .Texto * { 
   padding: 20px;
 }
+
